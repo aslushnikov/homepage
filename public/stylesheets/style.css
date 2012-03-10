@@ -1,0 +1,42 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div, nav, a {
+    border: 1px solid black;
+}
+
+#twitter {
+    position: fixed;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+}
+
+#wrap {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+#title {
+    height: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#main {
+    width: 95%;
+    margin: auto;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#container {
+}
+
