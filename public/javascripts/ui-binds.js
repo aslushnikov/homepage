@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
+    var state = "about";
     function loadUrl(url) {
         $("#container").load("/" + url + "/ajax");
-        window.history.pushState({}, "", url);
+        state = url;
+        window.history.pushState({url: state}, "", url);
         return false;
     }
 
@@ -11,6 +13,12 @@ $(document).ready(function() {
     _.each(st, function(s) {
         $("a#" + s).on("click", _.bind(loadUrl, {}, s));
     });
+
+    window.onpopstate = function(e) {
+        if (!e.state) return;
+        $("#container").load("/" + e.state.url + "/ajax");
+        state = e.state.url;
+    };
 
 
 });
