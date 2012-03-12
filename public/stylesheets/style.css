@@ -103,6 +103,18 @@ div, nav, a {
     background-color: yellow;
 }
 
+#cv-section #cv {
+    width: 300px;
+    margin: auto;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 120px;
+    background-color: #dcdcdc;
+
+    border: 2px dashed blue;
+}
+
 .rounded-corners-20 {
      -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
