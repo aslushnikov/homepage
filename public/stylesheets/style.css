@@ -69,10 +69,14 @@ div, nav, a {
     font-size: 14pt;
 }
 
+#about-section h1 {
+    display: inline;
+}
+
 #portrait {
     width: 20%;
-    float: left;
-    padding-right: 10px;
+    float: right;
+    padding: 20px;
 }
 
 #portrait img {
@@ -80,24 +84,23 @@ div, nav, a {
 }
 
 #projects-board {
-    text-align: center;
     border: 1px solid black;
+    width: 50%;
     height: 330px;
+    float: right;
+    display: inline-block;
     overflow: auto;
 }
 
 #projects-board .project {
-    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
     display: inline-block;
     width: 100px;
     height: 100px;
-    vertical-align: top;
-    margin: 10px;
-    background-color: gray;
-     -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
 }
 
 .rounded-corners-20 {
