@@ -1,7 +1,7 @@
 !!!
 html
   head
-    title= title
+    title Andrey Lushnikov
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="/javascripts/jquery-1.7.1.min.js")
     script(src="/javascripts/jquery.form.js");
@@ -9,15 +9,17 @@ html
     script(src="/javascripts/ui-binds.js")
   body
     #twitter here is gonna be my last tweets
-    #wrap
-      #title Andrey Lushnikov HomePage
+    #wrap.rounded-corners-20
+      #title
+        #welcome &mdash; Welcome! :)
+        #signature - Andrey Lushnikov
+      nav#navigation
+        div#about About
+        div#projects Projects
+        div#cv CV
+        div#downloads Downloads
+        div#contacts Contacts
       #main
-        nav#navigation
-          a(href="#")#about About
-          a(href="#")#projects Projects
-          a(href="#")#cv CV
-          a(href="#")#downloads Downloads
-          a(href="#")#contacts Contacts
         #container!= body
 
 

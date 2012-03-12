@@ -2,13 +2,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('/images/bg.jpg');
 }
 
 div, nav, a {
-    border: 1px solid black;
+    //border: 1px solid black;
 }
 
+
 #twitter {
+    display: none;
     position: fixed;
     right: 0px;
     width: 250px;
@@ -17,26 +20,90 @@ div, nav, a {
 
 #wrap {
     width: 900px;
-    height: 500px;
+    height: 600px;
     margin: auto;
+    margin-top: 10px;
+    background-color: white;
 }
 
 #title {
-    height: 150px;
+    height: 100px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#title #welcome {
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
+    float: left;
+}
+
+#title #signature {
+    float: right;
+    clear: left;
+    font-size: 30px;
 }
 
 #main {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
 #navigation {
     text-align: center;
+    background-color: black;
+}
+
+#navigation div {
+    width: 19%;
+    display: inline-block;
+    color: white;
+    border: 1px dashed white;
+    margin-right: 3px;
+    cursor: pointer;
 }
 
 #container {
+    font-size: 14pt;
+}
+
+#portrait {
+    width: 20%;
+    float: left;
+    padding-right: 10px;
+}
+
+#portrait img {
+    width: 100%;
+}
+
+#projects-board {
+    text-align: center;
+    border: 1px solid black;
+    height: 330px;
+    overflow: auto;
+}
+
+#projects-board .project {
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    margin: 10px;
+    background-color: gray;
+     -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.rounded-corners-20 {
+     -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
 }
 

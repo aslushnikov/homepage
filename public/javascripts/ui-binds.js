@@ -11,7 +11,7 @@ $(document).ready(function() {
     var st = ["contacts", "cv", "about", "projects", "downloads"];
 
     _.each(st, function(s) {
-        $("a#" + s).on("click", _.bind(loadUrl, {}, s));
+        $("#" + s).on("click", _.bind(loadUrl, {}, s));
     });
 
     window.onpopstate = function(e) {
