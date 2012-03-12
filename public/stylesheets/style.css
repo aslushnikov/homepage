@@ -22,7 +22,7 @@ div, nav, a {
     width: 900px;
     height: 600px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: white;
 }
 
@@ -70,16 +70,18 @@ div, nav, a {
 }
 
 #about-section h1 {
-    display: inline;
+    display: inline-block;
 }
 
 #portrait {
     width: 20%;
+    margin-top: 20px;
     float: right;
     padding: 20px;
 }
 
 #portrait img {
+    -webkit-transform: rotate(5deg);
     width: 100%;
 }
 
