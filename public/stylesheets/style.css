@@ -9,7 +9,6 @@ div, nav, a {
     //border: 1px solid black;
 }
 
-
 #twitter {
     display: none;
     position: fixed;
@@ -54,6 +53,8 @@ div, nav, a {
 #navigation {
     text-align: center;
     background-color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #navigation div {
@@ -83,6 +84,7 @@ div, nav, a {
 #portrait img {
     -webkit-transform: rotate(5deg);
     width: 100%;
+    border: 3px solid black;
 }
 
 #projects-board {
