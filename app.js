@@ -60,8 +60,10 @@ app.get('/projects/:ajax(ajax)?', function (req, res) {
 });
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
-    var a = require(path);
-    routes.render("view-project", {project: a[0]}, req, res);
+    var fd = fs.openSync(path, 'r');
+    var a = yaml.load(fd);
+    fs.closeSync(fd);
+    routes.render("view-project", {project: a}, req, res);
 });
 app.get('/:section/:ajax(ajax)?', function (req, res) {
     routes.render(req.params.section, {}, req, res);
