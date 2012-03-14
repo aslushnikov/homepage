@@ -6,6 +6,7 @@
 var express = require('express')
   , _ = require('underscore')._
   , routes = require('./routes')
+  , stylus = require('stylus')
 
 var app = module.exports = express.createServer();
 
@@ -17,6 +18,12 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+  app.use(stylus.middleware( {
+      src: __dirname + '/views',
+      dest: __dirname + '/public',
+      force: true,
+      debug: true
+  }));
   app.use(express.static(__dirname + '/public'));
 });
 
@@ -37,5 +44,5 @@ app.get('/cv/:ajax(ajax)?', routes.cv);
 app.get('/projects/:ajax(ajax)?', routes.projects);
 app.get('/downloads/:ajax(ajax)?', routes.downloads);
 
-app.listen(3000);
+app.listen(2000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

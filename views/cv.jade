@@ -1,12 +1,11 @@
 #cv-section
-  p
-    | Feel free to download my CV!
+  p Feel free to download my CV!
   #cv.rounded-corners-20 Download
     b &nbsp;CV.pdf
 
-script
-  $("#cv-section").ready(function() {
-    $("#cv-section #cv").on('click', function () {
-      window.location.href = "/files/cv-andrey-lushnikov.pdf";
+  script
+    $("#cv-section").ready(function() {
+      $("#cv-section #cv").on('click', function () {
+        window.location.href = "/files/cv-andrey-lushnikov.pdf";
+      });
     });
-  });
