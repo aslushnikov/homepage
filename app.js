@@ -7,8 +7,8 @@ var express = require('express')
   , _ = require('underscore')._
   , routes = require('./routes')
   , stylus = require('stylus')
-
-require('js-yaml');
+  , fs = require('fs')
+  , yaml = require('js-yaml')
 
 // I don't have any favicon; btw: what is it?..
 var app = module.exports = express.createServer(function(q,r,n) {
@@ -49,14 +49,18 @@ app.configure('production', function(){
 
 app.get('/', routes.about);
 app.get('/projects/:ajax(ajax)?', function (req, res) {
-    var projects = require('projects/list.yml');
+    var projects = [];
+    var fd = fs.openSync('projects/list.yml', 'r');
+    yaml.loadAll(fd, function(doc) {
+        projects.push(doc);
+    });
+    fs.closeSync(fd);
+    console.log("Projects found: " + projects.length);
     routes.render('projects', {projects: projects}, req, res);
 });
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
-    console.log(path);
     var a = require(path);
-    console.log(a);
     routes.render("view-project", {project: a[0]}, req, res);
 });
 app.get('/:section/:ajax(ajax)?', function (req, res) {
