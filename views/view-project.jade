@@ -8,3 +8,6 @@
   #screenshot
     img(src="#{project.screenshots[0]}")
   #description!= project.description
+  - if (project.src)
+    a(href="#{project.src}")#src Sources
+

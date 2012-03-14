@@ -1,8 +1,16 @@
 ---
+name: By Heart
+link: projects/byheart
+icon: /projects/byheart/by-icon.png
+---
 name: Tic Tac Toe
 link: projects/ttt
 icon: none
 ---
 name: Chess
-link: projects/chess
+link: /projects/chess
 icon: /projects/chess/chess-icon.png
+---
+name: Morph Server
+link: projects/morph-server
+icon: /projects/morph-server/proto.png

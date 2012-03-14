@@ -1,23 +1,26 @@
+.button
+  font-size: 14pt
+  display: inline-block
+  background-color: lime
+  border: 1px solid black
+  padding: 5px
+  margin: 5px
+  color: AliceBlue
+  text-decoration: none
+  font-weight: bold
+  border-radius: 5px
+  cursor: pointer
+
 #view-project-section
   #name
     //border: 1px solid black
     margin-bottom: 7px
     #link
-      font-size: 14pt
-      display: inline-block
+      @extend .button
       float: right
-      background-color: lime
-      border: 1px solid black
-      padding: 5px
-      margin: 5px
-      color: AliceBlue
-      text-decoration: none
-      font-weight: bold
-      border-radius: 5px
-      cursor: pointer
 
   #dates
-    float: left;
+    float: left
     margin-bottom: 7px
 
   #description
@@ -31,9 +34,18 @@
     clear: right
     w = 300px
     h = 300px
-    width: w
-    height: h
+    padding: 1px
+    width: w+@padding
+    height: h+@padding
     img
+      border-radius: 8px
+      border: 1px solid black
       width: w
       height: h
+  #src
+    @extend .button
+    float: left
+    clear: both
+    background-color: #8F00FF
+
 

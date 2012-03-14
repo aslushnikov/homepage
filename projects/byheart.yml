@@ -1,0 +1,9 @@
+name: By Heart
+link: http://byheart.heroku.com
+src: https://github.com/aslushnikov/byheart
+description: >
+
+start: May 28, 2011
+finish: May 29, 2011
+screenshots:
+  - /projects/byheart/byheart-screenshot.png
