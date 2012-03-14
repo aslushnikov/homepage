@@ -14,3 +14,16 @@
     | All sources are provided as-is; use them on your
     | own risk (if you're ever going to).
 
+script
+  $("#projects-section").ready(function () {
+    $(".project")
+      .on('mouseenter', function() {
+        this.css = this.css || $(this).css('background-color');
+        $(this).stop().animate({'backgroundColor' : '#ffff99', duration: 200 });
+      })
+      .on('mouseleave', function() {
+        $(this).stop().animate({'backgroundColor' : this.css, duration: 200});
+      });
+
+  });
+
