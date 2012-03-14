@@ -1,11 +1,5 @@
 #cv-section
-  p Feel free to download my CV!
-  #cv.rounded-corners-20 Download
+  h1 CV
+  p Feel free to download my CV
+  a(href="/files/cv-andrey-lushnikov.pdf")#cv-button Download
     b &nbsp;CV.pdf
-
-  script
-    $("#cv-section").ready(function() {
-      $("#cv-section #cv").on('click', function () {
-        window.location.href = "/files/cv-andrey-lushnikov.pdf";
-      });
-    });
