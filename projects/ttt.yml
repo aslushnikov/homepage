@@ -1,0 +1,12 @@
+name: Tic Tac Toe
+src: ./files/
+video: ./files/vids/
+description: >
+    sdf
+    asd
+#date in format YYYY-DD-MM
+start: 2008-01-12
+finish: 2009-01-01
+screenshots:
+  - /images/ttt/ss1.jpg
+  - /images/ttt/ss2.jpg
