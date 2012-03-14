@@ -1,8 +1,9 @@
 var state = "about";
 function loadUrl(url) {
-    $("#container").load("/" + url + "/ajax");
-    state = url;
-    window.history.pushState({url: state}, "", "/" + url);
+    if (url.indexOf('/') != 0) url = '/' + url;
+    $("#container").load(url + "/ajax");
+    state = url.substring(1);
+    window.history.pushState({url: state}, "", url);
     return false;
 }
 $(document).ready(function() {
