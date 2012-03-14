@@ -1,0 +1,52 @@
+<html>
+    <!-- written by Andrey Lushnikov, 2011. -->
+    <head>
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+        <title>chess</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js">
+        </script>
+        <script type="text/javascript" src="chess-js.js">
+        </script>
+    </head>
+    <body>
+        <div style="position:fixed; display: block">
+            <select id="positions">
+            </select>
+            <button onclick="javascript:launchGame()">restart</button><br/>
+            <button onclick="javascript:suggestMove()">Hint</button>
+            <span id="txt"></span><br/>
+            <button onclick="javascript:game.rollback()">Rollback</button><br/>
+            <input id="swapsides" type="checkbox" onclick="javascript:swapSides()">Rotate Board</checkbox>
+            <input id="rnd" type="checkbox" onclick="javascript:randomizeAI()" checked="true">Randomize AI</checkbox>
+            <fieldset onclick="changePlayers()">
+                <legend>Human plays for:</legend>
+                <input type="radio" name="humanside" value="white" checked="true">White<br/>
+                <input type="radio" name="humanside" value="black">Black<br/>
+                <input type="radio" name="humanside" value="both">Both<br/>
+            </fieldset>
+            <fieldset>
+                <legend>Information</legend>
+                <strong>Current Move:&nbsp;</strong><span id="curmove"></span><br/>
+                <strong>Last Move:&nbsp;</strong><span id="mmove"></span><br/>
+                <strong>Position estimation:&nbsp;</strong><span id="eval"></span><br/>
+                <strong>Game period:&nbsp;</strong><span id="gper"></span><br/>
+                <strong>Positions just evaluated:&nbsp;</strong><span id="peval"></span>
+            </fieldset>
+            <fieldset>
+                <legend>Status</legend>
+                <span id="status"></span><br/>
+            </fieldset>
+        </div>
+        <canvas id="screen" style="position:fixed;width:100%;height:100%;"></canvas>
+        <img id="pieces" src="pieces.png" style="display: none"/>
+        <img id="think1" src="think.jpeg" style="display: none; float:right"/><br/>
+        <script lang="text/javascript">
+            var changePlayers = window['changePlayers'];
+            var randomizeAI = window['randomizeAI'];
+            var swapSides = window['swapSides'];
+            var launchGame = window['launchGame'];
+            var suggestMove = window['suggestMove'];
+        </script>
+    </body>
+</html>

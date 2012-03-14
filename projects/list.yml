@@ -2,3 +2,7 @@
 name: Tic Tac Toe
 link: projects/ttt
 icon: none
+---
+name: Chess
+link: projects/chess
+icon: none
