@@ -1,10 +1,12 @@
 name: Chess
 link: /projects/chess/index.html
 description: >
-  The game was developed in <b>two</b> days
+  The game was made exclusively for some IT company. They
+  wanted a html5 chess game with offline AI strong enough to win in a game
+  with average user, and they wanted it to be done in a couple of days
+  because of a heavy internal deadline.
 #date in format YYYY-DD-MM
-start: 2008-01-12
-finish: 2009-01-01
+start: Dec 9, 2011
+finish: Dec 12, 2011
 screenshots:
-  - /images/ttt/ss1.jpg
-  - /images/ttt/ss2.jpg
+  - /images/chess-screenshot.png

@@ -1,8 +1,10 @@
 #view-project-section
-  - console.log(project);
-  p Project name: #{project.name}
-  - if (project.link)
-    a(href="#{project.link}") Try online
-  - else
-    div No link :(
-
+  h1#name #{project.name}
+    - if (project.link)
+      a(href="#{project.link}")#link Try online
+  #dates
+    #start Started: #{project.start}
+    #finish Finished: #{project.finish}
+  #screenshot
+    img(src="#{project.screenshots[0]}")
+  #description #{project.description}
