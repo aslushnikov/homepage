@@ -1,15 +1,7 @@
 #projects-section
   #projects-board
-    .project Chess
-    .project Checkers
-    .project Tic-tac-toe
-    .project SmartUI
-    .project Ёasy
-    .project Morph Server
-    .project Web Medic
-    .project By Heart
-    .project Facebook for Android
-    .project One more
+    each project in projects
+      div(onclick="loadUrl('#{project.link}')").project #{project.name}
   h1 IT Projects
   p
     | Here are projects I've done during last 10 years of programming. Among them

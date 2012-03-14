@@ -8,7 +8,17 @@ var express = require('express')
   , routes = require('./routes')
   , stylus = require('stylus')
 
-var app = module.exports = express.createServer();
+require('js-yaml');
+
+// I don't have any favicon; btw: what is it?..
+var app = module.exports = express.createServer(function(q,r,n) {
+    if (q.url === '/favicon.ico') {
+        r.writeHead(404);
+        r.end();
+    } else {
+        n();
+    }
+});
 
 // Configuration
 
@@ -38,11 +48,20 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.about);
-app.get('/about/:ajax(ajax)?', routes.about);
-app.get('/contacts/:ajax(ajax)?', routes.contacts);
-app.get('/cv/:ajax(ajax)?', routes.cv);
-app.get('/projects/:ajax(ajax)?', routes.projects);
-app.get('/downloads/:ajax(ajax)?', routes.downloads);
+app.get('/projects/:ajax(ajax)?', function (req, res) {
+    var projects = require('projects/list.yml');
+    routes.render('projects', {projects: projects}, req, res);
+});
+app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
+    var path = "projects/" + req.params.name + ".yml";
+    console.log(path);
+    var a = require(path);
+    console.log(a);
+    routes.render("view-project", {project: a[0]}, req, res);
+});
+app.get('/:section/:ajax(ajax)?', function (req, res) {
+    routes.render(req.params.section, {}, req, res);
+});
 
 app.listen(2000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

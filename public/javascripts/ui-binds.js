@@ -1,12 +1,11 @@
+var state = "about";
+function loadUrl(url) {
+    $("#container").load("/" + url + "/ajax");
+    state = url;
+    window.history.pushState({url: state}, "", "/" + url);
+    return false;
+}
 $(document).ready(function() {
-
-    var state = "about";
-    function loadUrl(url) {
-        $("#container").load("/" + url + "/ajax");
-        state = url;
-        window.history.pushState({url: state}, "", url);
-        return false;
-    }
 
     var st = ["contacts", "cv", "about", "projects", "downloads"];
 
