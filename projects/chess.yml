@@ -2,7 +2,7 @@ name: Chess
 link: /projects/chess/index.html
 description: >
   <p>The game was made exclusively for some IT company. They
-  wanted a html5 chess game with offline AI strong enough to win in a game
+  wanted an html5 chess game with offline AI strong enough to win in a game
   with average user. The most challenging were deadlines: the game had to be
   done in a <strong>couple of days</strong></p>
   <p>Unfortunately I can't share sources as the project was made on commercial
@@ -11,4 +11,4 @@ description: >
 start: Dec 9, 2011
 finish: Dec 12, 2011
 screenshots:
-  - /images/chess-screenshot.png
+  - /projects/chess/chess-screenshot.png
