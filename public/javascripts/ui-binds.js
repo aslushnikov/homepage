@@ -19,6 +19,5 @@ $(document).ready(function() {
         $("#container").load("/" + e.state.url + "/ajax");
         state = e.state.url;
     };
-
-
 });
+
