@@ -13,7 +13,7 @@ function selectSection(section) {
     } else {
         section = $(section);
     }
-    $("#navigation div.selected")
+    $("#navigation div")
         .stop()
         .removeClass("selected")
         .removeAttr('style');
