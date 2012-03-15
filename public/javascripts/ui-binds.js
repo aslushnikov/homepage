@@ -43,11 +43,11 @@ $(document).ready(function() {
 
     $("#navigation div").on('mouseenter', function() {
         this.css = this.css || $(this).css('background-color');
-        $(this).stop().animate({'backgroundColor': '#9999ff', duration: 400});
+        $(this).stop().animate({'backgroundColor': '#9999ff', duration: 200});
     });
     $("#navigation div").on('mouseleave', function() {
         if ($(this).hasClass("selected")) return;
-        $(this).stop().animate({'backgroundColor': this.css, duration: 400});
+        $(this).stop().animate({'backgroundColor': this.css, duration: 200});
     });
 });
 
