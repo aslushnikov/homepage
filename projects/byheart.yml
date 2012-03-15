@@ -9,22 +9,25 @@ description: >
   </p>
   <p>
   Our project was some kind of language cards to effectively store and learn
-  unknown english words. The project was built out of four parts: rest server
-  (my responsobility), web client (<a href="http://udalov.org">Alex Udalov</a>),
-  iOS client (<a href="http://vk.com/mortigenus">Vania Chalov<a>) and Android client
-  (developed by <a href="http://vk.com/xvorsx">Sergey Vorobyev</a>). All design
-  was made very fast by <a href="http://vk.com/deer_huntress">Maria Vlasova</a>
+  unknown english words. The project was built out of four parts:
+  <ul>
+  <li>rest server (my responsobility)
+  <li>web client (<a href="http://udalov.org">Alex Udalov</a>),
+  <li>iOS client (<a href="http://vk.com/mortigenus">Vania Chalov<a>)
+  <li>Android client
+  (developed by <a href="http://vk.com/xvorsx">Sergey Vorobyev</a>)
+  </ul>All design
+  was made by <a href="http://vk.com/deer_huntress">Maria Vlasova</a>
   </p>
   <p>
   ByHeart finally <b>won a prize</b> as the most technically finished project
-  (Description, photos and results are available
+  (description, photos and results are available
   <a href="http://hackday.ru/events/hackday-16/report.html">here</a>).
   But because of such services like <a href="http://wordsteps.com">WordSteps</a>
   and <a href="http://lingualeo.ru">LinguaLeo</a> that fully cover ByHeart's
   functionality its further development was
   stopped.
   </p>
-
 start: May 28, 2011
 finish: May 29, 2011
 screenshots:
