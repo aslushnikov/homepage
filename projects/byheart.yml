@@ -3,8 +3,8 @@ link: http://byheart.heroku.com
 src: https://github.com/aslushnikov/byheart
 description: >
   <p>
-  The project was made during <a href="http://www.hackday.ru">"hackday"</a>.
-  During the <b>2-days</b> event, programmers were doing prototypes of the projects
+  The project was made during <a href="http://www.hackday.ru">Hackday</a>.
+  During the <b>2-days</b> event, programmers were doing prototypes
   and presented them in the end of the second day.
   </p>
   <p>
@@ -16,9 +16,13 @@ description: >
   was made very fast by <a href="http://vk.com/deer_huntress">Maria Vlasova</a>
   </p>
   <p>
-  The project finally <b>won a prize</b> as the most finished project. Description,
-  photos and results are available
-  <a href="http://hackday.ru/events/hackday-16/report.html">here</a>
+  ByHeart finally <b>won a prize</b> as the most technically finished project
+  (Description, photos and results are available
+  <a href="http://hackday.ru/events/hackday-16/report.html">here</a>).
+  But because of such services like <a href="http://wordsteps.com">WordSteps</a>
+  and <a href="http://lingualeo.ru">LinguaLeo</a> that fully cover ByHeart's
+  functionality its further development was
+  stopped.
   </p>
 
 start: May 28, 2011
