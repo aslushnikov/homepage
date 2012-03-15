@@ -11,11 +11,11 @@ function selectSection(section) {
     if (typeof(section) == 'string') {
         section = $('#' + section);
     }
-    section = $(section);
+    section = $(section).stop();
     selectedSection = section.attr('id');
-    $("#navigation div.selected").removeClass("selected").removeAttr('style');
-    section.removeAttr('style');
+    $("#navigation div.selected").stop().removeClass("selected").removeAttr('style');
     section.addClass("selected");
+    section.removeAttr('style');
 }
 $(document).ready(function() {
 
