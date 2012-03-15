@@ -2,12 +2,12 @@
   h1#name #{project.name}
     - if (project.link)
       a(href="#{project.link}")#link Try online
+    - if (project.src)
+      a(href="#{project.src}")#src Sources
   #dates
     #start Started: #{project.start}
     #finish Finished: #{project.finish}
   #screenshot
     img(src="#{project.screenshots[0]}")
   #description!= project.description
-  - if (project.src)
-    a(href="#{project.src}")#src Sources
 
