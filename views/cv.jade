@@ -1,5 +1,19 @@
 #cv-section
-  h1 CV
-  p Feel free to download my CV
-  a(href="/files/cv-andrey-lushnikov.pdf")#cv-button Download
-    b &nbsp;CV.pdf
+  #cv-button
+    img(src="/images/cv.png")
+
+script
+  $("#cv-section").ready(function() {
+    $("#cv-button")
+      .on('mouseenter', function() {
+        this.css = this.css || $(this).css('background-color');
+        $(this).stop().animate({backgroundColor: "#ffff99", duration: 400});
+      })
+      .on('mouseleave', function() {
+        if (!this.css) return;
+        $(this).stop().animate({backgroundColor: this.css, duration: 400});
+      })
+      .on('click', function() {
+        window.location.href="/files/cv-andrey-lushnikov.pdf";
+      });
+  });
