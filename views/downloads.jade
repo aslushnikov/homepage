@@ -1,7 +1,45 @@
 #downloads-section
-  h1 Hi guys
-  p vimrc
-  p tmux.conf
-  p topcoder plugins (stolen from udalov.spb.su)
-  p cv.odt
+  h1 Downloads
+  #table
+    .row
+      .link /files/vimrc
+      .name vimrc
+      .description
+        p vim configuration file
+        p download, rename to .vimrc and put in ~
+    .row
+      .link /files/tmux.conf
+      .name tmux.conf
+      .description
+        p tmux configuration file
+        p download, rename to .tmux.conf and put in ~
+    .row
+      .link /files/plugins.tar.gz
+      .name Moj+FileEdit+CodeProcessor
+      .description
+        p Plugins for topcoder contest arena
+    .row
+      .link /files/arena.tar.gz
+      .name TC Contest Arena
+      .description
+        p Topcoder contest arena
+    .row
+      .link /files/cv-andrey-lushnikov.odt
+      .name cv.odt
+      .description
+        p Source of my cv
 
+script
+  $("#downloads-section").ready(function(){
+    $(".row")
+      .on('click', function() {
+        var link = $(".link", this).html();
+        window.location.href = link;
+      })
+      .on('mouseenter', function() {
+        $(this).addClass('selected');
+      })
+      .on('mouseleave', function() {
+        $(this).removeClass('selected');
+      })
+  });
