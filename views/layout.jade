@@ -22,4 +22,8 @@ html
         #contacts Contacts
       #main
         #container!= body
+    script
+      $(document).ready(function() {
+        $("#navigation ##{view}").addClass("selected");
+      });
 

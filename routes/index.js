@@ -3,7 +3,7 @@ var _ = require('underscore')._;
  * GET home page.
  */
 function render(view, options, req, res) {
-    var basic = {title: view, layout: !req.params.ajax};
+    var basic = {view: view, layout: !req.params.ajax};
     _.extend(basic, options);
     res.render(view, basic);
 }
