@@ -56,17 +56,18 @@ app.get('/projects/:ajax(ajax)?', function (req, res) {
     });
     fs.closeSync(fd);
     console.log("Projects found: " + projects.length);
-    routes.render('projects', {projects: projects}, req, res);
+    routes.render('projects', {projects: projects, section: 'projects'}, req, res);
 });
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
     var fd = fs.openSync(path, 'r');
     var a = yaml.load(fd);
     fs.closeSync(fd);
-    routes.render("view-project", {project: a}, req, res);
+    routes.render("view-project", {project: a, section: 'projects'}, req, res);
 });
+
 app.get('/:section/:ajax(ajax)?', function (req, res) {
-    routes.render(req.params.section, {}, req, res);
+    routes.render(req.params.section, {section: req.params.section}, req, res);
 });
 
 app.listen(2000);
