@@ -19,5 +19,13 @@ $(document).ready(function() {
         $("#container").load("/" + e.state.url + "/ajax");
         state = e.state.url;
     };
+
+    var css = $("#navigation").css('background-color');
+    $("#navigation div").on('mouseenter', function() {
+        $(this).stop().animate({'backgroundColor': '#9999ff', duration: 400});
+    });
+    $("#navigation div").on('mouseleave', function() {
+        $(this).stop().animate({'backgroundColor': css, duration: 400});
+    });
 });
 
