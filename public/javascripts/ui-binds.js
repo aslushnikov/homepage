@@ -49,5 +49,26 @@ $(document).ready(function() {
         if ($(this).hasClass("selected")) return;
         $(this).stop().animate({'backgroundColor': this.css, duration: 200});
     });
+
+    $(document).keypress(function(e) {
+        console.log("sdf");
+        switch(e.which) {
+            case 49:
+                $("#about").trigger("click");
+                break;
+            case 50:
+                $("#projects").trigger("click");
+                break;
+            case 51:
+                $("#cv").trigger("click");
+                break;
+            case 52:
+                $("#downloads").trigger("click");
+                break;
+            case 53:
+                $("#contacts").trigger("click");
+                break;
+        }
+    });
 });
 
