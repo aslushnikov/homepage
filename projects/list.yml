@@ -5,7 +5,7 @@ icon: /projects/byheart/by-icon.png
 ---
 name: Tic Tac Toe
 link: projects/ttt
-icon: none
+icon: /projects/ttt/icon2.png
 ---
 name: Chess
 link: /projects/chess
