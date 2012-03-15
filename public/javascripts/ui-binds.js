@@ -10,12 +10,18 @@ var selectedSection = "";
 function selectSection(section) {
     if (typeof(section) == 'string') {
         section = $('#' + section);
+    } else {
+        section = $(section);
     }
-    section = $(section).stop();
+    $("#navigation div.selected")
+        .stop()
+        .removeClass("selected")
+        .removeAttr('style');
+    section
+        .stop()
+        .addClass("selected")
+        .removeAttr('style');
     selectedSection = section.attr('id');
-    $("#navigation div.selected").stop().removeClass("selected").removeAttr('style');
-    section.addClass("selected");
-    section.removeAttr('style');
 }
 $(document).ready(function() {
 
