@@ -2,6 +2,24 @@ name: By Heart
 link: http://byheart.heroku.com
 src: https://github.com/aslushnikov/byheart
 description: >
+  <p>
+  The project was made during <a href="http://www.hackday.ru">"hackday"</a>.
+  During the <b>2-days</b> event, programmers were doing prototypes of the projects
+  and presented them in the end of the second day.
+  </p>
+  <p>
+  Our project was some kind of language cards to effectively store and learn
+  unknown english words. The project was built out of four parts: rest server
+  (my responsobility), web client (<a href="http://udalov.org">Alex Udalov</a>),
+  iOS client (<a href="http://vk.com/mortigenus">Vania Chalov<a>) and Android client
+  (developed by <a href="http://vk.com/xvorsx">Sergey Vorobyev</a>). All design
+  was made very fast by <a href="http://vk.com/deer_huntress">Maria Vlasova</a>
+  </p>
+  <p>
+  The project finally <b>won a prize</b> as the most finished project. Description,
+  photos and results are available
+  <a href="http://hackday.ru/events/hackday-16/report.html">here</a>
+  </p>
 
 start: May 28, 2011
 finish: May 29, 2011
