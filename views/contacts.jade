@@ -5,8 +5,28 @@
     convenient about. That means: feel free to choose any option among these,
     and I'll respond you as fast as possible
   div#contacts
-    img(src="/images/email.png")
-    img(src="/images/fb.png")
-    img(src="/images/couch.png")
-    img(src="/images/vk.png")
-    img(src="/images/twitter.png")
+    img(src="/images/email.png")#email
+    img(src="/images/fb.png")#fb
+    img(src="/images/couch.png")#couch
+    img(src="/images/vk.png")#vk
+    img(src="/images/twitter.png")#twitter
+script
+  $("#contacts-section").ready(function(){
+    $("#contacts #email") .on('click', function() {
+      var pp = 'liamg@vokinhsulsa';
+      var mail = pp.split("").reverse().join("") + ".com";
+      window.location.href="mailto:" + mail;
+    });
+    $("#contacts #fb").on('click', function() {
+      window.location.href = "http://facebook.com/andrey.lushnikov";
+    });
+    $("#contacts #couch").on('click', function() {
+      window.location.href = "http://www.couchsurfing.com/people/kotenok_gav";
+    });
+    $("#contacts #vk").on('click', function() {
+      window.location.href = "http://vk.com/id8580";
+    });
+    $("#contacts #twitter").on('click', function() {
+      window.location.href = "http://twitter.com/#!/KoTeHoK_gav";
+    });
+  });
