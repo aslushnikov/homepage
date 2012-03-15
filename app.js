@@ -47,7 +47,9 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/', routes.about);
+app.get('/', function (req, res) {
+    res.redirect('/about');
+});
 app.get('/projects/:ajax(ajax)?', function (req, res) {
     var projects = [];
     var fd = fs.openSync('projects/list.yml', 'r');
