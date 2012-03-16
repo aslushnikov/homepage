@@ -1,10 +1,8 @@
 name: Tic Tac Toe
-src: ./files/
-video: ./files/vids/
 description: >
   I will put some description here a bit later
 start: Aug, 2008
 finish: Sep, 2008
+src: ./projects/ttt/ttt.tar.gz
 screenshots:
-  - /images/ttt/ss1.jpg
-  - /images/ttt/ss2.jpg
+  - /projects/ttt/screenshot-1.png

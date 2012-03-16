@@ -5,12 +5,16 @@ icon: /projects/byheart/by-icon.png
 ---
 name: Tic Tac Toe
 link: projects/ttt
-icon: /projects/ttt/icon2.png
+icon: /projects/ttt/icon.png
 ---
 name: Chess
 link: /projects/chess
-icon: /projects/chess/chess-icon.png
+icon: /projects/chess/icon.png
 ---
 name: Morph Server
 link: projects/morph-server
 icon: /projects/morph-server/proto.png
+---
+name: Tetris
+link: projects/tetris
+icon: /projects/tetris/icon.png
