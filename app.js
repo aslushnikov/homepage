@@ -50,6 +50,7 @@ app.configure('production', function(){
 app.get('/', function (req, res) {
     res.redirect('/about');
 });
+// project list
 app.get('/projects/:ajax(ajax)?', function (req, res) {
     var projects = [];
     var fd = fs.openSync('projects/list.yml', 'r');
@@ -60,6 +61,7 @@ app.get('/projects/:ajax(ajax)?', function (req, res) {
     console.log("Projects found: " + projects.length);
     routes.render('projects', {projects: projects, section: 'projects'}, req, res);
 });
+// current project, mapping to *.yml project
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
     var fd = fs.openSync(path, 'r');
@@ -67,7 +69,7 @@ app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     fs.closeSync(fd);
     routes.render("view-project", {project: a, section: 'projects'}, req, res);
 });
-
+// route for all other sections
 app.get('/:section/:ajax(ajax)?', function (req, res) {
     routes.render(req.params.section, {section: req.params.section}, req, res);
 });
