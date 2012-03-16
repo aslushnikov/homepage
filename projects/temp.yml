@@ -1,11 +1,16 @@
 name: Sample project
 link: Link to online working copy, if any
 src: Link to src, if any
+start: Start date in any format you wish, would be rendered as-is
+finish: Finish date
+tags:
+  - One tag
+  - Second tag
+  - Third tag
 description: >
   <p>Description, html works well here</p>
   <p>Use P tags - they are rendered pretty nice</p>
-start: Start date in any format you wish, would be rendered as-is
-finish: Finish date
+
 # array of screenshots; the first one would be rendered on the left side
 # of project
 screenshots:

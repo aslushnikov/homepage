@@ -2,6 +2,8 @@ name: Minesweeper
 src: /projects/minesweeper/minesweeper.tar.gz
 start: May 2007
 finish: One day
+tags:
+  - Delphi
 description: >
   <p>
   Meet my <strong>favourite</strong> project among all I've done for my classmates: MineSweeper!

@@ -2,6 +2,8 @@ name: Jaw Breaker
 src: /projects/jawbreaker/jawbreaker.tar.gz
 start: May, 2007
 finish: In one day
+tags:
+  - Delphi
 description: >
   <p>
   The game was a default one on the Windows 6.5 Mobile and had the same name

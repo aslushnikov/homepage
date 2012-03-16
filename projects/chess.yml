@@ -1,5 +1,7 @@
 name: Chess
 link: /projects/chess/index.html
+tags:
+  - html5
 description: >
   <p>
   The game was made exclusively for some IT company. They

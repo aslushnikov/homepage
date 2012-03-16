@@ -2,6 +2,8 @@ name: Lines
 start: May 2007
 finish: in one day
 src: /projects/lines/lines.tar.gz
+tags:
+  - Delphi
 description: >
   <p>
   Meet Just Another Lines game, written in Delphi.

@@ -1,5 +1,9 @@
 name: Morph server
 link: http://morph-pro.bioinf.spbau.ru/
+tags:
+  - Ruby on Rails
+  - WebGL
+  - Three.js
 description: >
   <p>
   The project was part of my summer <a href="http://bioinf.spbau.ru/en/">Academic

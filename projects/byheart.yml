@@ -1,6 +1,8 @@
 name: By Heart
 link: http://byheart.heroku.com
 src: https://github.com/aslushnikov/byheart
+tags:
+  - Ruby On Rails
 description: >
   <p>
   The project was made during <a href="http://www.hackday.ru">Hackday</a>.

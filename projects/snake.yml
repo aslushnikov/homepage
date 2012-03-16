@@ -2,6 +2,8 @@ name: Snake
 start: May 2007
 finish: In one day
 src: /projects/snake/snake.tar.gz
+tags:
+  - Delphi
 description: >
   <p>
   The game is probably the ugliest one among that bunch of games I did for my

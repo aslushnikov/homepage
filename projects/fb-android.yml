@@ -1,5 +1,8 @@
 name: Facebook for Android
 link: https://play.google.com/store/apps/details?id=com.facebook.katana&feature=search_result
+tags:
+  - Android SDK
+  - Java
 description: >
   <p>
   During my internship in Facebook I was developing Facebook for Android application.

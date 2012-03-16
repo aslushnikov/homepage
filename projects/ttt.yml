@@ -1,4 +1,9 @@
 name: Tic Tac Toe
+src: ./projects/ttt/ttt.tar.gz
+start: Aug, 2008
+finish: Sep, 2008
+tags:
+  - Java
 description: >
   <p>
   Just Another Tic-Tac-Toe game made for fun. This one is
@@ -29,9 +34,5 @@ description: >
   supports mouse interaction, but don't do it: the whole thing hangs!
   </p>
 
-
-start: Aug, 2008
-finish: Sep, 2008
-src: ./projects/ttt/ttt.tar.gz
 screenshots:
   - /projects/ttt/screenshot-1.png
