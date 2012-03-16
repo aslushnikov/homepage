@@ -1,0 +1,11 @@
+name: Snake
+src: /projects/snake/snake.tar.gz
+description: >
+  <p>Description, html works well here</p>
+  <p>Use P tags - they are rendered pretty nice</p>
+start: Start date in any format you wish, would be rendered as-is
+finish: Finish date
+# array of screenshots; the first one would be rendered on the left side
+# of project
+screenshots:
+  - /projects/snake/screenshot-1.png
