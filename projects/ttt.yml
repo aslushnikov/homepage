@@ -1,6 +1,35 @@
 name: Tic Tac Toe
 description: >
-  I will put some description here a bit later
+  <p>
+  Just Another Tic-Tac-Toe game made for fun. This one is
+  written entirely in java (read: crossplatform!) and supports dozen
+  of features:
+  <ul>
+    <li>Network game
+    <li>Two AIs of different difficulties
+    <li>Half-extendable AI interface to write you own (I said "half" because you
+    should patch gui.SelectPlayer as well)
+    <li>Game log that could be saved and loaded
+    <li>Chat for network game
+    <li>Hot-seat game
+    <li>View customization
+  </ul>
+  </p>
+  <p>
+  To get all this things working on Windows, you should double click on
+  <code>TTT.bat</code> which you'll find in <code>bin</code> directory.
+  </p>
+  <p>
+  On Unix-like machines things are a bit harder 'cause I didn't create any
+  shortcut for launching. You'll have to open terminal, <code>cd</code> to
+  the <code>bin</code> directory, and run <code>java gui.MainFrame</code>
+  </p>
+  <p>
+  And yes, there's one known bug that I figured out today: the game log
+  supports mouse interaction, but don't do it: the whole thing hangs!
+  </p>
+
+
 start: Aug, 2008
 finish: Sep, 2008
 src: ./projects/ttt/ttt.tar.gz
