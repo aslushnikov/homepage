@@ -4,6 +4,12 @@
       a(href="#{project.url}").project
         img(src='#{project.icon}')
         .text #{project.shortname}
+        - var tagsClasses = "";
+        - for(var i = 0; i < project.tags.length; i++) {
+        -   tagsClasses += " " + project.tags[i].replace(/[. ]/g, "-");
+        - }
+        - var text = "<div class='" + tagsClasses + "'></div>";
+        .tags!= text
   h2 Projects
   p.
     Here are projects I've done during the years of programming. Among them
@@ -13,6 +19,10 @@
   p.
     All sources are provided as-is; use them on your
     own risk (if you're ever going to).
+
+  #tagButtons
+    each tag in tags
+      .toggleTag.selected= tag
 
 script
   $("#projects-section").ready(function () {
@@ -29,5 +39,14 @@ script
         $(this).stop().animate({'backgroundColor' : this.css, duration: 200});
       });
 
+    $("#tagButtons .toggleTag").on('click', function () {
+      var cl = $(this).html().replace(/[. ]/g, "-");
+      $(this).toggleClass("selected");
+      if ($(this).hasClass("selected")) {
+        $(".project .tags ." + cl).parent().parent().fadeIn();
+      } else {
+        $(".project .tags ." + cl).parent().parent().fadeOut();
+      }
+    });
   });
 

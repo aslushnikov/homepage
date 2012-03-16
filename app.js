@@ -50,7 +50,6 @@ app.configure('production', function(){
 app.get('/', function (req, res) {
     res.redirect('/about');
 });
-// project list
 
 yaml.read = function(path) {
     var fd = fs.openSync(path, 'r');
@@ -59,6 +58,7 @@ yaml.read = function(path) {
     return a;
 }
 
+// project list
 app.get('/projects/:ajax(ajax)?', function (req, res) {
     var projects = [];
     var files = yaml.read('projects/list.yml').projects;
@@ -78,14 +78,31 @@ app.get('/projects/:ajax(ajax)?', function (req, res) {
         projects.push(p);
     });
     console.log("Projects found: " + projects.length);
-    routes.render('projects', {projects: projects, section: 'projects'}, req, res);
+    var tags = makeTags(projects);
+    routes.render('projects', {projects: projects, section: 'projects', tags: tags}, req, res);
 });
+
+function makeTags(projects) {
+    var tags = {};
+    projects.forEach(function(proj){ proj.tags.forEach(function(tag) {
+        tags[tag] = tags[tag] ? 1 : tags[tag] + 1;
+    }); });
+    var ans = [];
+    for (key in tags) {
+        if (tags.hasOwnProperty(key)) {
+            ans.push(key);
+        }
+    }
+    return ans;
+}
+
 // current project, mapping to *.yml project
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
     var a = yaml.read(path);
     routes.render("view-project", {project: a, section: 'projects'}, req, res);
 });
+
 // route for all other sections
 app.get('/:section/:ajax(ajax)?', function (req, res) {
     routes.render(req.params.section, {section: req.params.section}, req, res);
