@@ -1,8 +1,22 @@
 name: Tetris
 start: May 2007
-finish: couple of days
+finish: In couple of days
 description: >
-  Here will be some description of the project
+  <p>
+  This project was made in a big hurry as a coursework for my classmate in
+  school. This is Just Another Tetris game, this time written in Delphi.
+  </p>
+  <p>
+  The game is not original in any way: you can rotate the piece that is
+  falling down from the top of the glass, the completed lines are removed, and
+  the gameplay speeds up as you are not dying for more and more time. There is a
+  persistent records table (summoned via F9), help page (F1) and new game
+  options.
+  </p>
+  <p>
+  The game runs fine on Windows, but there are encoding-troubles if you try to
+  run it through <code>wine</code>.
+  </p>
 screenshots:
   - /projects/tetris/screenshot-1.png
 src:
