@@ -12,7 +12,7 @@ description: >
   This project was made as a coursework for my classmate.
   </p>
   <p>
-  The one has super-simplistic graphics, but it provides some kind of animation
+  The one has super-simplistic graphics, but it has some kind of animation
   when you get five-in-a-row :) It doesn't have a record table, but it persists
   a single best score and name of the hero.
   </p>
