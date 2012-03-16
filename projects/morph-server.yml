@@ -1,16 +1,23 @@
 name: Morph server
 link: http://morph-pro.bioinf.spbau.ru/
 description: >
-  <p>The idea was to implement a morphing server for proteins using the
-  on-line algorithm proposed by Pavel Pevzner and Natalie Castellana. So the project
-  is made out of three parts: web-face, algorithm implementation/optimization and
-  WebGL-based client for rendering and animation morphing results.
+  <p>
+  The project was part of my summer <a href="http://bioinf.spbau.ru/en/">Academic
+  University</a> internship, and a paper about results is going to be published.
   </p>
-  <p>On the moment of Mar, 2012 the algorithm seems to be rewritten (my
-  implementation sucked)</p>
-  <p>The project was part of my summer <a href="http://bioinf.spbau.ru/en/">Academic
-  University</a> internship, and
-  a paper about results is going to be published</p>
+  <p>
+  The idea was to implement a morphing server for proteins using the
+  on-line algorithm proposed by Pavel Pevzner and Natalie Castellana. So the project
+  is made out of three parts:
+  <ul>
+    <li>web-face
+    <li>algorithm implementation/optimization
+    <li> WebGL-based client for rendering and animating morphing results
+  </ul>
+  Unfortunately on the moment of Mar, 2012 the entire algorithm seems to be
+  rewritten because my implementation sucked. But the good thing is that
+  two other parts are still my things :)
+  </p>
 start: Apr, 2011
 finish: Jul, 2011
 screenshots:
