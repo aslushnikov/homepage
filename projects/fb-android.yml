@@ -1,12 +1,14 @@
 name: Facebook for Android
+shortname: FB for Android
 link: https://play.google.com/store/apps/details?id=com.facebook.katana&feature=search_result
 start: Aug 1, 2011
 finish: Oct 21, 2011
-screenshots:
-  - /projects/fb-android/screenshot-1.png
 tags:
   - Android SDK
   - Java
+screenshots:
+  - /projects/fb-android/screenshot-1.png
+icon: /projects/fb-android/icon-2.png
 description: >
   <p>
   During my internship in Facebook I was developing Facebook for Android application.

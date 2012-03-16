@@ -51,22 +51,39 @@ app.get('/', function (req, res) {
     res.redirect('/about');
 });
 // project list
+
+yaml.read = function(path) {
+    var fd = fs.openSync(path, 'r');
+    var a = yaml.load(fd);
+    fs.closeSync(fd);
+    return a;
+}
+
 app.get('/projects/:ajax(ajax)?', function (req, res) {
     var projects = [];
-    var fd = fs.openSync('projects/list.yml', 'r');
-    yaml.loadAll(fd, function(doc) {
-        projects.push(doc);
+    var files = yaml.read('projects/list.yml').projects;
+    console.log("files: " + files);
+    files.forEach(function(file){
+        file = file + ".yml";
+        console.log("loading " + file);
+
+        if (/^_/.test(file)) return;
+        if (/list.yml$/.test(file)) return;
+        if (!/.yml$/.test(file)) return;
+
+        file = 'projects/' + file;
+        var p = yaml.read(file);
+        p.shortname = p.shortname || p.name;
+        p['url'] = file.replace(".yml", "");
+        projects.push(p);
     });
-    fs.closeSync(fd);
     console.log("Projects found: " + projects.length);
     routes.render('projects', {projects: projects, section: 'projects'}, req, res);
 });
 // current project, mapping to *.yml project
 app.get('/projects/:name/:ajax(ajax)?', function (req, res) {
     var path = "projects/" + req.params.name + ".yml";
-    var fd = fs.openSync(path, 'r');
-    var a = yaml.load(fd);
-    fs.closeSync(fd);
+    var a = yaml.read(path);
     routes.render("view-project", {project: a, section: 'projects'}, req, res);
 });
 // route for all other sections

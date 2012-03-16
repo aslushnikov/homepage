@@ -1,40 +1,13 @@
----
-name: Chess
-link: /projects/chess
-icon: /projects/chess/icon.png
----
-name: FB Android
-link: /projects/fb-android
-icon: /projects/fb-android/icon-2.png
----
-name: By Heart
-link: projects/byheart
-icon: /projects/byheart/icon.png
----
-name: Morph Server
-link: projects/morph-server
-icon: /projects/morph-server/proto.png
----
-name: Tic Tac Toe
-link: projects/ttt
-icon: /projects/ttt/icon.png
----
-name: Tetris
-link: projects/tetris
-icon: /projects/tetris/icon.png
----
-name: Lines
-link: /projects/lines
-icon: /projects/lines/icon.png
----
-name: Snake
-link: /projects/snake
-icon: /projects/snake/icon.png
----
-name: Minesweeper
-link: /projects/minesweeper
-icon: /projects/minesweeper/icon.png
----
-name: Jaw Breaker
-link: /projects/jawbreaker
-icon: /projects/jawbreaker/icon.png
+# defines the order of projects
+projects:
+  - chess
+  - fb-android
+  - byheart
+  - morph-server
+  - ttt
+  - tetris
+  - minesweeper
+  - lines
+  - jawbreaker
+  - snake
+

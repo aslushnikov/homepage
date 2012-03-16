@@ -1,9 +1,9 @@
 #projects-section
   #projects-board
     each project in projects
-      div(onclick="loadUrl('#{project.link}')").project
+      div(onclick="loadUrl('#{project.url}')").project
         img(src='#{project.icon}')
-        .text #{project.name}
+        .text #{project.shortname}
   h1 IT Projects
   p.
     Here are projects I've done during the years of programming. Among them

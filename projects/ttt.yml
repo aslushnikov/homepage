@@ -6,6 +6,7 @@ tags:
   - Java
 screenshots:
   - /projects/ttt/screenshot-1.png
+icon: /projects/ttt/icon.png
 description: >
   <p>
   Just Another Tic-Tac-Toe game made for fun. This one is
