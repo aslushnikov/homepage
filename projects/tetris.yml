@@ -5,3 +5,5 @@ description: >
   Here will be some description of the project
 screenshots:
   - /projects/tetris/screenshot-1.png
+src:
+  - /projects/tetris/tetris.zip

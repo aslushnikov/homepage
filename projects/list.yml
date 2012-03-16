@@ -18,3 +18,7 @@ icon: /projects/morph-server/proto.png
 name: Tetris
 link: projects/tetris
 icon: /projects/tetris/icon.png
+---
+name: FB Android
+link: /projects/fb-android
+icon: /projects/fb-android/icon-2.png
