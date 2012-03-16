@@ -1,5 +1,5 @@
 name: Minesweeper
-src: Link to src, if any
+src: /projects/minesweeper/minesweeper.tar.gz
 description: >
   <p>Description, html works well here</p>
   <p>Use P tags - they are rendered pretty nice</p>
