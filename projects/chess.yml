@@ -1,12 +1,25 @@
 name: Chess
 link: /projects/chess/index.html
 description: >
-  <p>The game was made exclusively for some IT company. They
+  <p>
+  The game was made exclusively for some IT company. They
   wanted an html5 chess game with offline AI strong enough to win in a game
   with average user. The most challenging were deadlines: the game had to be
-  done in a <strong>couple of days</strong></p>
-  <p>Unfortunately I can't share sources as the project was made on commercial
-  basis, but you're free to challenge AI :)</p>
+  done in a <strong>couple of days</strong>
+  </p>
+  <p>
+  The game maintains almost all chess rules, including:
+  <ul>
+  <li>En passant
+  <li>Restriction to castle if the king crosses the beaten cell
+  </ul>
+  The only one <strong>not maintained</strong> is an abitily to choose a desired
+  piece when the pawn reaches the last row.
+  </p>
+  <p>
+  Unfortunately I can't share sources as the project was made on commercial
+  basis, but you're free to challenge AI :)
+  </p>
 #date in format YYYY-DD-MM
 start: Dec 9, 2011
 finish: Dec 12, 2011
