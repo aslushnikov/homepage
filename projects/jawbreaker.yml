@@ -1,10 +1,24 @@
 name: Jaw Breaker
 src: /projects/jawbreaker/jawbreaker.tar.gz
+start: May, 2007
+finish: In one day
 description: >
-  <p>Description, html works well here</p>
-  <p>Use P tags - they are rendered pretty nice</p>
-start: Start date in any format you wish, would be rendered as-is
-finish: Finish date
+  <p>
+  The game was a default one on the Windows 6.5 Mobile and had the same name
+  there. The idea of the game is to destroy topologically-connected balls of the
+  same color (it's not possible to destroy a single ball). The more balls in the
+  group, the more score you get. You can check the score of the group by selecting
+  it via right-button mouse click: the score will be displayed in the bottom-right
+  corner.
+  </p>
+  <p>
+  The game has two game modes: classic and arcade. In the classic mode, the empty
+  space left after destroyed balls is not filled with new ones, but in arcade
+  mode it does.
+  </p>
+  <p>
+  The game works fine both under Windows and Wine.
+  </p>
 # array of screenshots; the first one would be rendered on the left side
 # of project
 screenshots:

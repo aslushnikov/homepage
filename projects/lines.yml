@@ -1,10 +1,21 @@
 name: Lines
+start: May 2007
+finish: in one day
 src: /projects/lines/lines.tar.gz
 description: >
-  <p>Description, html works well here</p>
-  <p>Use P tags - they are rendered pretty nice</p>
-start: Start date in any format you wish, would be rendered as-is
-finish: Finish date
+  <p>
+  Meet Just Another Lines game, written in Delphi.
+  This project was made as a coursework for my classmate.
+  </p>
+  <p>
+  The one has super-simplistic graphics, but it provides some kind of animation
+  when you get five-in-a-row :) It doesn't have a record table, but it persists
+  a single best score and name of the hero.
+  </p>
+  <p>
+  The game works fine under Windows, but there is an encoding bug I encountered
+  while running it under <code>wine</code>.
+  </p>
 # array of screenshots; the first one would be rendered on the left side
 # of project
 screenshots:

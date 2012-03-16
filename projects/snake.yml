@@ -1,10 +1,27 @@
 name: Snake
+start: May 2007
+finish: In one day
 src: /projects/snake/snake.tar.gz
 description: >
-  <p>Description, html works well here</p>
-  <p>Use P tags - they are rendered pretty nice</p>
-start: Start date in any format you wish, would be rendered as-is
-finish: Finish date
+  <p>
+  The game is probably the ugliest one among that bunch of games I did for my
+  classmates (and I can't assume any reason for that). Nevertheless, it finally
+  got an excellent mark, and everyone was happy
+  </p>
+  <p>
+  The game is a snake emulation. There are two kinds of food it can eat: standart one
+  and a super-food which gives more points (just like Snake II on old Nokia).
+  The super-food is what you can see on the screenshot. The progress bar reflects
+  amount of time left for you to eat the super food, or it will disappear.
+  </p>
+  <p>
+  The game doesn't have a records table, but it persists a single best score with a
+  name of the hero.
+  </p>
+  <p>
+  The game works fine under windows and there are regular encoding troubles when
+  launched under <code>wine</code>
+  </p>
 # array of screenshots; the first one would be rendered on the left side
 # of project
 screenshots:
