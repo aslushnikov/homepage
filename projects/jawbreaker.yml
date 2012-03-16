@@ -4,6 +4,8 @@ start: May, 2007
 finish: In one day
 tags:
   - Delphi
+screenshots:
+  - /projects/jawbreaker/screenshot-1.png
 description: >
   <p>
   The game was a default one on the Windows 6.5 Mobile and had the same name
@@ -23,5 +25,3 @@ description: >
   </p>
 # array of screenshots; the first one would be rendered on the left side
 # of project
-screenshots:
-  - /projects/jawbreaker/screenshot-1.png

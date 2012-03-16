@@ -1,9 +1,13 @@
 name: Morph server
 link: http://morph-pro.bioinf.spbau.ru/
+start: Apr, 2011
+finish: Jul, 2011
 tags:
   - Ruby on Rails
   - WebGL
   - Three.js
+screenshots:
+  - /projects/morph-server/morph-screenshot.png
 description: >
   <p>
   The project was part of my summer <a href="http://bioinf.spbau.ru/en/">Academic
@@ -22,7 +26,3 @@ description: >
   rewritten because my implementation sucked. But the good thing is that
   two other parts are still my things :)
   </p>
-start: Apr, 2011
-finish: Jul, 2011
-screenshots:
-  - /projects/morph-server/morph-screenshot.png

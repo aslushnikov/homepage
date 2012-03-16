@@ -4,6 +4,8 @@ finish: in one day
 src: /projects/lines/lines.tar.gz
 tags:
   - Delphi
+screenshots:
+  - /projects/lines/screenshot-1.png
 description: >
   <p>
   Meet Just Another Lines game, written in Delphi.
@@ -20,5 +22,3 @@ description: >
   </p>
 # array of screenshots; the first one would be rendered on the left side
 # of project
-screenshots:
-  - /projects/lines/screenshot-1.png

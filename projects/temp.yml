@@ -7,12 +7,10 @@ tags:
   - One tag
   - Second tag
   - Third tag
+screenshots:
+  - /projects/sampleproject/screenshot-1.png
+  - /projects/sampleproject/screenshot-2.png
 description: >
   <p>Description, html works well here</p>
   <p>Use P tags - they are rendered pretty nice</p>
 
-# array of screenshots; the first one would be rendered on the left side
-# of project
-screenshots:
-  - /projects/sampleproject/screenshot-1.png
-  - /projects/sampleproject/screenshot-2.png

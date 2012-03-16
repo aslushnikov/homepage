@@ -1,7 +1,11 @@
 name: Chess
 link: /projects/chess/index.html
+start: Dec 9, 2011
+finish: Dec 12, 2011
 tags:
   - html5
+screenshots:
+  - /projects/chess/screenshot-1.png
 description: >
   <p>
   The game was made exclusively for some IT company. They
@@ -22,8 +26,3 @@ description: >
   Unfortunately I can't share sources as the project was made on commercial
   basis, but you're free to challenge AI :)
   </p>
-#date in format YYYY-DD-MM
-start: Dec 9, 2011
-finish: Dec 12, 2011
-screenshots:
-  - /projects/chess/screenshot-1.png

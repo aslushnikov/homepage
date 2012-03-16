@@ -4,6 +4,8 @@ finish: In one day
 src: /projects/snake/snake.tar.gz
 tags:
   - Delphi
+screenshots:
+  - /projects/snake/screenshot-1.png
 description: >
   <p>
   The game is probably the ugliest one among that bunch of games I did for my
@@ -24,7 +26,3 @@ description: >
   The game works fine under windows and there are regular encoding troubles when
   launched under <code>wine</code>
   </p>
-# array of screenshots; the first one would be rendered on the left side
-# of project
-screenshots:
-  - /projects/snake/screenshot-1.png

@@ -1,12 +1,15 @@
 name: Minesweeper
 src: /projects/minesweeper/minesweeper.tar.gz
 start: May 2007
-finish: One day
+finish: In one day
 tags:
   - Delphi
+screenshots:
+  - /projects/minesweeper/screenshot-1.png
 description: >
   <p>
-  Meet my <strong>favourite</strong> project among all I've done for my classmates: MineSweeper!
+  Meet my <strong>favourite</strong> project among all I've done for my
+  classmates: MineSweeper!
   </p>
   <p>
   Minesweeper is the only one that has <strong>sprites</strong> for rendering
@@ -29,7 +32,3 @@ description: >
   As always, the game runs fine on Windows, but there are problems with encoding
   under <code>wine</code>
   </p>
-# array of screenshots; the first one would be rendered on the left side
-# of project
-screenshots:
-  - /projects/minesweeper/screenshot-1.png

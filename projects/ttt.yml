@@ -4,6 +4,8 @@ start: Aug, 2008
 finish: Sep, 2008
 tags:
   - Java
+screenshots:
+  - /projects/ttt/screenshot-1.png
 description: >
   <p>
   Just Another Tic-Tac-Toe game made for fun. This one is
@@ -34,5 +36,3 @@ description: >
   supports mouse interaction, but don't do it: the whole thing hangs!
   </p>
 
-screenshots:
-  - /projects/ttt/screenshot-1.png

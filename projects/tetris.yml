@@ -1,8 +1,11 @@
 name: Tetris
+src: /projects/tetris/tetris.zip
 start: May 2007
 finish: In couple of days
 tags:
   - Delphi
+screenshots:
+  - /projects/tetris/screenshot-1.png
 description: >
   <p>
   This project was made in a big hurry as a coursework for my classmate in
@@ -19,7 +22,3 @@ description: >
   The game runs fine on Windows, but there are encoding-troubles if you try to
   run it through <code>wine</code>.
   </p>
-screenshots:
-  - /projects/tetris/screenshot-1.png
-src:
-  - /projects/tetris/tetris.zip

@@ -1,5 +1,9 @@
 name: Facebook for Android
 link: https://play.google.com/store/apps/details?id=com.facebook.katana&feature=search_result
+start: Aug 1, 2011
+finish: Oct 21, 2011
+screenshots:
+  - /projects/fb-android/screenshot-1.png
 tags:
   - Android SDK
   - Java
@@ -24,9 +28,3 @@ description: >
   see it on the right-most screenshot). I didn't implemenent design, but did the
   functionality of the thing.
   </p>
-start: Aug 1, 2011
-finish: Oct 21, 2011
-# array of screenshots; the first one would be rendered on the left side
-# of project
-screenshots:
-  - /projects/fb-android/screenshot-1.png

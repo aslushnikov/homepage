@@ -1,8 +1,12 @@
 name: By Heart
 link: http://byheart.heroku.com
 src: https://github.com/aslushnikov/byheart
+start: May 28, 2011
+finish: May 29, 2011
 tags:
   - Ruby On Rails
+screenshots:
+  - /projects/byheart/byheart-screenshot.png
 description: >
   <p>
   The project was made during <a href="http://www.hackday.ru">Hackday</a>.
@@ -30,7 +34,3 @@ description: >
   functionality its further development was
   stopped.
   </p>
-start: May 28, 2011
-finish: May 29, 2011
-screenshots:
-  - /projects/byheart/byheart-screenshot.png
