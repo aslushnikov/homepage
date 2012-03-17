@@ -91,5 +91,5 @@ app.get('/:section/:ajax(ajax)?', function (req, res) {
     routes.render(req.params.section, {section: req.params.section}, req, res);
 });
 
-app.listen(2000);
+app.listen(process.env.PORT || 2000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
