@@ -42,12 +42,13 @@ $(document).ready(function() {
     };
 
     $("#navigation div").on('mouseenter', function() {
-        this.css = this.css || $(this).css('background-color');
+        if ($(this).hasClass("selected")) return;
+        this.oldcss = this.oldcss || $(this).css('background-color');
         $(this).stop().animate({'backgroundColor': '#9999ff', duration: 200});
     });
     $("#navigation div").on('mouseleave', function() {
         if ($(this).hasClass("selected")) return;
-        $(this).stop().animate({'backgroundColor': this.css, duration: 200});
+        $(this).stop().animate({'backgroundColor': this.oldcss, duration: 200});
     });
 
     $(document).keypress(function(e) {
