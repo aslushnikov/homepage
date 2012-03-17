@@ -1,7 +1,7 @@
 #projects-section
   #projects-board
     each project in projects
-      div(onclick="loadUrl('#{project.url}')").project
+      a(href="#{project.url}").project
         img(src='#{project.icon}')
         .text #{project.shortname}
   h1 IT Projects
@@ -16,6 +16,10 @@
 
 script
   $("#projects-section").ready(function () {
+    $("a.project").click(function (e) {
+      loadUrl($(this).attr('href'));
+      e.preventDefault();
+    });
     $(".project")
       .on('mouseenter', function() {
         this.css = this.css || $(this).css('background-color');
