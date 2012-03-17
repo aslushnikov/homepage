@@ -10,8 +10,8 @@ icon: /projects/snake/icon.png
 description: >
   <p>
   The game is probably the ugliest one among that bunch of games I did for my
-  classmates (and I can't assume any reason for that). Nevertheless, it finally
-  got an excellent mark, and everyone was happy
+  classmates. Nevertheless, it finally was evaluated to an excellent mark and
+  everyone was happy
   </p>
   <p>
   The game is a snake emulation. There are two kinds of food it can eat: standart one

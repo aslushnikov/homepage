@@ -10,8 +10,8 @@ icon: /projects/chess/icon.png
 description: >
   <p>
   The game was made exclusively for some IT company. They
-  wanted an html5 chess game with offline AI strong enough to win in a game
-  with average user. The most challenging were deadlines: the game had to be
+  wanted an html5 chess with offline AI strong enough to win in a game
+  with average user. The most challenging were deadlines: the work had to be
   done in a <strong>couple of days</strong>
   </p>
   <p>
@@ -21,7 +21,7 @@ description: >
   <li>Restriction to castle if the king crosses the beaten cell
   </ul>
   The only one <strong>not maintained</strong> is an abitily to choose a desired
-  piece when the pawn reaches the last row.
+  piece when the pawn reaches the last row; intead a queen is put on the desk.
   </p>
   <p>
   Unfortunately I can't share sources as the project was made on commercial

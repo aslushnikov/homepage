@@ -18,7 +18,7 @@ description: >
   tetris where graphics seems to be pretty natural). The game
   supports various field sizes, starting from 10x10 and up to 40x40. It has
   auto-open functionality (green cells on screenshot are auto-opened). Mouse's
-  right button is bind to toggle question mark and mine flag just like the
+  right button is bound to toggle question mark and mine flag just like the
   original windows version does.
   </p>
   <p>
