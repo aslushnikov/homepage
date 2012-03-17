@@ -1,0 +1,24 @@
+# Template file for a project
+#
+# 1. If the file starts with underscore, then it won't be published
+# 2. Optional parameters:
+#   - shortname: a title under icon in a project view; will be set to
+#     name by default
+#
+name: Sample project
+link: Link to online working copy, if any
+src: Link to src, if any
+start: Start date in any format you wish, would be rendered as-is
+finish: Finish date
+tags:
+  - One tag
+  - Second tag
+  - Third tag
+screenshots:
+  - screenshot-1.png
+  - screenshot-2.png
+icon: path to icon
+description: >
+  <p>Description, html works well here</p>
+  <p>Use P tags - they are rendered pretty nice</p>
+
