@@ -1,13 +1,22 @@
 #view-project-section
   h1#name #{project.name}
     - if (project.link)
-      a(href="#{project.link}")#link Try online
+      a(href="#{project.link}", target="_blank")#link Try online
     - if (project.src)
-      a(href="#{project.src}")#src Sources
+      a(href="#{project.src}", target="_blank")#src Sources
   #dates
     #start Started: #{project.start}
     #finish Finished: #{project.finish}
   #screenshot
     img(src="#{project.screenshots[0]}")
   #description!= project.description
+
+script
+  $("#view-project-section").ready(function() {
+    $("#view-project-section a").click(function() {
+      var t = $(this);
+      $.ga.trackOut(t.attr('href'));
+      return true;
+    });
+  });
 

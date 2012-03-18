@@ -38,6 +38,7 @@ script
     $(".row")
       .on('click', function() {
         var link = $(".link", this).html();
+        $.ga.trackDownloads(link);
         window.location.href = link;
       })
       .on('mouseenter', function() {
