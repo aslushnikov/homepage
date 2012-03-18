@@ -4,6 +4,7 @@ function loadUrl(url) {
     $("#container").load(url + "/ajax");
     state = url.substring(1);
     window.history.pushState({url: state, section: selectedSection}, "", url);
+    $.ga.trackAjax(url);
     return false;
 }
 var selectedSection = "";
