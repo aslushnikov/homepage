@@ -1,6 +1,7 @@
 #cv-section
   #cv-button
-    img(src="/images/cv.png")
+    a(href="/files/cv-andrey-lushnikov.pdf", target="_blank")
+      img(src="/images/cv.png")
 
 script
   $("#cv-section").ready(function() {
@@ -14,6 +15,7 @@ script
         $(this).stop().animate({backgroundColor: this.css, duration: 400});
       })
       .on('click', function() {
-        window.location.href="/files/cv-andrey-lushnikov.pdf";
+        //$.ga.trackOut(
+        //window.location.href="/files/cv-andrey-lushnikov.pdf";
       });
   });

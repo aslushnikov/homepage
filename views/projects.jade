@@ -17,7 +17,7 @@
 script
   $("#projects-section").ready(function () {
     $("a.project").click(function (e) {
-      loadUrl($(this).attr('href'));
+      loadUrl(this.href);
       e.preventDefault();
     });
     $(".project")

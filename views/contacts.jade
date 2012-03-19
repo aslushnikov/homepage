@@ -5,32 +5,23 @@
     convenient about. That means: feel free to choose any option among these,
     and I'll respond you as fast as possible
   div#contacts
-    img(src="/images/email.png")#email
-    img(src="/images/fb.png")#fb
-    img(src="/images/couch.png")#couch
-    img(src="/images/vk.png")#vk
-    img(src="/images/twitter.png")#twitter
+    a#email
+      img(src="/images/email.png")#email
+    a(href="http://facebook.com/andrey.lushnikov")
+      img(src="/images/fb.png")#fb
+    a(href="http://www.couchsurfing.com/people/kotenok_gav")
+      img(src="/images/couch.png")#couch
+    a(href="http://vk.com/id8580")
+      img(src="/images/vk.png")#vk
+    a(href="http://twitter.com/#!/KoTeHoK_gav")
+      img(src="/images/twitter.png")#twitter
 script
   $("#contacts-section").ready(function(){
-    function goto(link) {
-      $.ga.trackOut(link);
-      window.open(link);
-    }
-    $("#contacts #email") .on('click', function() {
-      var pp = 'liamg@vokinhsulsa';
-      var mail = pp.split("").reverse().join("") + ".com";
-      goto("mailto:" + mail);
-    });
-    $("#contacts #fb").on('click', function() {
-      goto("http://facebook.com/andrey.lushnikov");
-    });
-    $("#contacts #couch").on('click', function() {
-      goto("http://www.couchsurfing.com/people/kotenok_gav");
-    });
-    $("#contacts #vk").on('click', function() {
-      goto("http://vk.com/id8580");
-    });
-    $("#contacts #twitter").on('click', function() {
-      goto("http://twitter.com/#!/KoTeHoK_gav");
+    var pp = 'liamg@vokinhsulsa';
+    var mail = pp.split("").reverse().join("") + ".com";
+    $("#contacts #email").attr("href", "mailto:" + mail);
+    $("#contacts a").attr("target", "_blank");
+    $("#contacts a").click(function(e) {
+      $.ga.trackOut(this.href);
     });
   });

@@ -1,20 +1,19 @@
-.button
-  font-size: 12pt
-  display: inline-block
-  background-color: lime
-  padding: 5px
-  margin-top: 15px
-  margin-left: 10px
-  color: AliceBlue
-  text-decoration: none
-  font-weight: bold
-  border-radius: 5px
-  cursor: pointer
-
 #view-project-section
+  .button
+    font-size: 12pt
+    display: inline-block
+    background-color: lime
+    padding: 5px
+    margin-top: 15px
+    margin-left: 10px
+    color: AliceBlue
+    text-decoration: none
+    font-weight: bold
+    border-radius: 5px
+    cursor: pointer
   #name
     #link
-      @extend .button
+      @extend #view-project-section .button
       float: right
 
   #dates
@@ -58,7 +57,7 @@
       max-width: w
       max-height: h
   #src
-    @extend .button
+    @extend #view-project-section .button
     float: right
     background-color: #8F00FF
 

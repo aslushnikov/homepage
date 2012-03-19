@@ -27,11 +27,11 @@ html
         #welcome &mdash; Welcome! :)
         #signature - Andrey Lushnikov
       nav#navigation
-        #about About
-        #projects Projects
-        #cv CV
-        #downloads Downloads
-        #contacts Contacts
+        a(href="/about").button#about About
+        a(href="/projects").button#projects Projects
+        a(href="/cv").button#cv CV
+        a(href="/downloads").button#downloads Downloads
+        a(href="/contacts").button#contacts Contacts
       #main
         #container!= body
     script

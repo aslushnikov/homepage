@@ -7,39 +7,33 @@
     on your own risk
 
   #table
-    .row
-      .link /files/vimrc
+    a(href="/files/vimrc").row
       .name .vimrc
       .description
         p vim configuration file
-    .row
-      .link /files/tmux.conf
+    a(href="/files/tmux.conf").row
       .name .tmux.conf
       .description
         p tmux configuration file
-    .row
-      .link /files/plugins.tar.gz
+    a(href="/files/plugins.tar.gz").row
       .name Moj+FileEdit+CodeProcessor
       .description
         p Plugins for topcoder contest arena
-    .row
-      .link /files/arena.jnlp
+    a(href="/files/arena.jnlp").row
       .name TC Contest Arena
       .description
         p Topcoder contest arena
-    .row
-      .link /files/cv-andrey-lushnikov.odt
+    a(href="/files/cv-andrey-lushnikov.odt").row
       .name cv.odt
       .description
         p Source of my cv
 
 script
   $("#downloads-section").ready(function(){
+    $("#table a").attr("target", "_blank");
     $(".row")
       .on('click', function() {
-        var link = $(".link", this).html();
-        $.ga.trackDownloads(link);
-        window.location.href = link;
+        $.ga.trackDownloads(this.href);
       })
       .on('mouseenter', function() {
         $(this).addClass('selected');
