@@ -4,6 +4,7 @@ finish: in one day
 src: /projects/lines/lines.tar.gz
 tags:
   - Delphi
+  - game
 screenshots:
   - /projects/lines/screenshot-1.png
 icon: /projects/lines/icon.png

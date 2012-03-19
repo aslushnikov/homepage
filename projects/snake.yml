@@ -4,6 +4,7 @@ finish: In one day
 src: /projects/snake/snake.tar.gz
 tags:
   - Delphi
+  - game
 screenshots:
   - /projects/snake/screenshot-1.png
 icon: /projects/snake/icon.png
