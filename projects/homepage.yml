@@ -6,6 +6,7 @@
 #     name by default
 #
 name: Homepage
+src: https://github.com/aslushnikov/homepage
 start: Mar 11, 2012
 finish: Under development
 tags:
