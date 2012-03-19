@@ -14,8 +14,8 @@ all dependencies
 
 I planned it as a homepage and did it for fun, and here it is: my *naive CMS*.
 
-Here's only one kind of documents: projects. Their description is done via
-YAML-files, which you can find in folder `./projects`
+Here's only one kind of documents: projects. They are described via
+YAML-files which you can find in folder `./projects`
 
 The list of all files and their order is determined by `./projects/list.yml`
 
