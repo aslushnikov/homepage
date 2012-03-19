@@ -15,12 +15,10 @@ div, nav, a
   height: 100%
 
 #wrap
-  border-radius: 10px
   width: 900px
   min-height: 600px
   margin: auto
   margin-top: 20px
-  background-color: white
 
   a
     text-decoration: none
@@ -30,28 +28,31 @@ div, nav, a
     padding: 10px
     padding-left: 100px
     padding-right: 100px
+    background-color: none
+    color: white
     #welcome
       text-align: center
       font-weight: bold
       font-size: 50px
       float: left
-      text-shadow: #777 0.2em 0.2em 0.2em
+      //text-shadow: #777 0.2em 0.2em 0.2em
     #signature
       float: right
       clear: left
       font-size: 30px
-      text-shadow: #777 0.2em 0.2em 0.2em
+      //text-shadow: #777 0.2em 0.2em 0.2em
 
   #navigation
+    border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px
     text-align: center
-    background-color: black
+    background-color: white
     padding-top: 5px
     padding-bottom: 5px
     .button
       width: 19%
       display: inline-block
-      color: white
-      border: 1px solid white
+      color: black
+      border: 1px solid black
       padding-top: 3px
       padding-bottom: 3px
       margin-top: 3px
@@ -64,10 +65,13 @@ div, nav, a
       background-color: #99f
 
   #main
+    border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px
+    background-color: white
     margin: auto
     overflow: auto
     padding-bottom: 2em
-    width: 90%
     #container
-      font-size: 14pt
+      font-size: 13pt
+      width: 90%
+      margin: auto
 
