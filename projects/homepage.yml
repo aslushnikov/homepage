@@ -1,0 +1,26 @@
+# Template file for a project
+#
+# 1. If the file starts with underscore, then it won't be published
+# 2. Optional parameters:
+#   - shortname: a title under icon in a project view; will be set to
+#     name by default
+#
+name: Homepage
+start: Mar 11, 2012
+finish: Under development
+tags:
+  - Node.js
+screenshots:
+  - /projects/homepage/screenshot-1.png
+icon: /projects/homepage/icon.png
+description: >
+  <p>
+  The homepage is written from scratch and is based on the
+  Node.js platform. I don't use any CMS or anything like this because
+  I love the process of webdev with the platform, so it's kind of hobby
+  for me to update the site.
+  </p>
+  <p>
+  Btw there's an ability to control site sections via 1-5 keyboard buttons
+  </p>
+

@@ -1,5 +1,6 @@
 # defines the order of projects
 projects:
+  - homepage
   - chess
   - fb-android
   - byheart
