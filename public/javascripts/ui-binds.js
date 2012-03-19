@@ -1,10 +1,10 @@
 function loadUrl(url) {
     $("#container").load(url + "/ajax");
+    var selectedSection = $("#navigation .button.selected").attr('id');
     window.history.pushState({url: url, section: selectedSection}, "", url);
     $.ga.trackAjax(url);
     return false;
 }
-var selectedSection = "";
 function selectSection(section) {
     if (typeof(section) == 'string') {
         section = $('#' + section);
@@ -19,8 +19,13 @@ function selectSection(section) {
         .stop()
         .addClass("selected")
         .removeAttr('style');
-    selectedSection = section.attr('id');
 }
+
+function setInitialSection(section) {
+    selectSection(section);
+    $("#" + section).addClass("initial-section");
+}
+
 $(document).ready(function() {
 
     $("#navigation .button").on("click", function(e) {
@@ -30,9 +35,10 @@ $(document).ready(function() {
     });
 
     window.onpopstate = function(e) {
-        if (!e.state) return;
-        $("#container").load(e.state.url + "/ajax");
-        selectSection(e.state.section);
+        if (e.state) {
+            $("#container").load(e.state.url + "/ajax");
+            selectSection(e.state.section);
+        }
     };
 
     $("#navigation .button").on('mouseenter', function() {
