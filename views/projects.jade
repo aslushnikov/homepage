@@ -20,7 +20,9 @@
     All sources are provided as-is; use them on your
     own risk (if you're ever going to).
 
-  #tagButtons
+
+  fieldset#tagButtons
+    legend Tags
     each tag in tags
       .toggleTag.selected= tag
 
@@ -43,9 +45,9 @@ script
       var cl = $(this).html().replace(/[. ]/g, "-");
       $(this).toggleClass("selected");
       if ($(this).hasClass("selected")) {
-        $(".project .tags ." + cl).parent().parent().fadeIn();
+        $(".project .tags ." + cl).parent().parent().fadeTo('fast', 1);
       } else {
-        $(".project .tags ." + cl).parent().parent().fadeOut();
+        $(".project .tags ." + cl).parent().parent().fadeTo('fast', 0.2);
       }
     });
   });
