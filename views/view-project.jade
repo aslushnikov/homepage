@@ -10,13 +10,17 @@
   #screenshot
     img(src="#{project.screenshots[0]}")
   #description!= project.description
+  #fblike
+    fb:like
 
 script
   $("#view-project-section").ready(function() {
+    FB.XFBML.parse($("#view-project-section #fblike").get(0));
     $("#view-project-section a").click(function() {
       var t = $(this);
       $.ga.trackOut(t.attr('href'));
       return true;
     });
   });
+
 
