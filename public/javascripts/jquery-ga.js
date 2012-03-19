@@ -1,16 +1,16 @@
 (function ($) {
         $.extend({
                 ga: {
-                        track: function (url, category) {
+                        track: function (url) {
                                 if (window._gaq) {
-                                        _gaq.push(['_trackPageview', category + url]);
+                                        _gaq.push(['_trackPageview', url]);
                                 }
                         },
                         trackAjax: function(url) {
-                            this.track(url, '/ajax-handlers');
+                            this.track(url);
                         },
                         trackDownloads: function(url) {
-                            this.track(url, '/downloads');
+                            _gat._getTrackerByName()._trackEvent("downloads", url);
                         },
                         trackOut: function(url) {
                             _gat._getTrackerByName()._trackEvent("outbound", url);
