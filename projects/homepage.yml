@@ -11,17 +11,31 @@ start: Mar 11, 2012
 finish: Under development
 tags:
   - Node.js
+  - html5
 screenshots:
   - /projects/homepage/screenshot-1.png
 icon: /projects/homepage/icon.png
 description: >
   <p>
-  The homepage is written from scratch and is based on the
-  Node.js platform. I don't use any CMS or anything like this because
-  I love the process of webdev, so it's kind of hobby for me
-  to update the site and develop it from time to time.
+  The homepage is written from scratch and is based on the Node.js platform. The
+  reason I chose this hard way instead of using some kind of CMS is that I
+  simply love coding, so it's kind of hobby for me to update the site and
+  develop it from time to time.
   </p>
   <p>
-  Btw there's an ability to control site sections via 1-5 keyboard buttons
+  The first public version of the site had a nasty design because I did it
+  on my own. But then <a href='http://vk.com/deer_huntress'>Maria Vlasova</a>
+  was kind enough to help me with the look-and-feel; I hope you guys like the new
+  version much more.
   </p>
-
+  <p>
+  All sources of the site are available via github; if you find any bugs -
+  please, let me know about it via <a
+  href="https://github.com/aslushnikov/homepage/issues/new"><strong>creating an
+  issue</strong></a> on the github.
+  </p>
+  <p>
+  And "one more thing": all your activity on the site is tracked via Google
+  Analytics. I know nobody cares, but it looks like I have to warn you
+  about the fact.
+  </p>
