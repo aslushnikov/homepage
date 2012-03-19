@@ -1,8 +1,6 @@
-var state = "about";
 function loadUrl(url) {
     $("#container").load(url + "/ajax");
-    state = url.substring(1);
-    window.history.pushState({url: state, section: selectedSection}, "", url);
+    window.history.pushState({url: url, section: selectedSection}, "", url);
     $.ga.trackAjax(url);
     return false;
 }
@@ -33,9 +31,8 @@ $(document).ready(function() {
 
     window.onpopstate = function(e) {
         if (!e.state) return;
-        $("#container").load("/" + e.state.url + "/ajax");
+        $("#container").load(e.state.url + "/ajax");
         selectSection(e.state.section);
-        state = e.state.url;
     };
 
     $("#navigation .button").on('mouseenter', function() {
