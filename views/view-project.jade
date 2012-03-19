@@ -16,11 +16,13 @@
 script
   $("#view-project-section").ready(function() {
     FB.XFBML.parse($("#view-project-section #fblike").get(0));
+
     $("#view-project-section a").click(function() {
       var t = $(this);
       $.ga.trackOut(t.attr('href'));
       return true;
     });
+    $("#view-project-section #description a").attr('target', '_blank');
   });
 
 
