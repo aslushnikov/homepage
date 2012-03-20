@@ -1,14 +1,12 @@
 #!/bin/sh
 
-# usage: pane_title top|bottom 'non-scrolling line content' command to run with args
+# usage: no_scroll_line top|bottom 'non-scrolling line content' command to run with args
 #
 #     Set up a non-scrolling line at the top (or the bottom) of the
 #     terminal, write the given text into it, then (in the scrolling
 #     region) run the given command with its arguments. When the
 #     command has finished, pause with a prompt and reset the
 #     scrolling region.
-#
-# Example: sh pane_title bottom "diploma" node app.js
 
 get_size() {
     set -- $(stty size)
@@ -36,7 +34,7 @@ set_nonscrolling_line() {
     clear
     tput csr $scroll_region
     tput cup "$non_scroll_line" 0
-    printf %s "$(tput setaf 6; tput setab 5)$2$(tput op)"
+    printf %s "$(tput setaf 0; tput setab 7)$2$(tput op)"
     tput cup "$first_scrolling_line" 0
 }
 reset_scrolling() {
