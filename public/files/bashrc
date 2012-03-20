@@ -1,0 +1,13 @@
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+# Show git branch in the terminal status line
+txtgrn='\e[0;32m' # Green
+txtrst='\e[0m'    # Text Reset
+export PS1="\u:\w\[$txtgrn\]\$(parse_git_branch)\[$txtrst\]$ "
+
+export PATH=$PATH:$HOME/bin
+export EDITOR="vim"
+
+alias grep="grep --color=auto"
