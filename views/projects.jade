@@ -27,6 +27,7 @@
       .toggleTag= tag
 
 script
+  $("title").html("Projects");
   $("#projects-section").ready(function () {
     $("a.project").click(function (e) {
       loadUrl(this.href);
