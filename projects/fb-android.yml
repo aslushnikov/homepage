@@ -11,9 +11,10 @@ screenshots:
 icon: /projects/fb-android/icon-2.png
 description: >
   <p>
-  During my internship in Facebook I was developing Facebook for Android application.
-  The are couple of features I implemented for it that were included in production,
-  and here I will share a few words about them with you.
+  In 2011 I spent some time in Facebook developing their "Facebook for Android"
+  application. I had plenty of different sub-projects related to the app, and
+  some of them were even included later in production. Here I will share a few
+  words about them.
   </p>
   <p>
   The first one I call "popups". Popup is a small iPad-like dialog that appears
@@ -21,12 +22,12 @@ description: >
   screenshot)
   </p>
   <p>
-  Second one is "make profile picture" button. It allows you to take any picture,
+  Second one is "make profile picture" functionality. It allows you to take any picture,
   crop it in any way you like and set it up as a profile pic. Cropping supports
   multitouch.
   </p>
   <p>
   Third one is "search" bar that you see in the top of navigation panel (you can
-  see it on the right-most screenshot). I didn't implemenent design, but did the
-  functionality of the thing.
+  see it on the right-most screenshot). I didn't implemenent design, but carried
+  out the functionality of the thing.
   </p>

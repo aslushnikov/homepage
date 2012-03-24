@@ -16,7 +16,7 @@ description: >
   done in a <strong>couple of days</strong>
   </p>
   <p>
-  The game maintains almost all chess rules, including:
+  The game maintains almost all rules, including:
   <ul>
   <li>En passant
   <li>Restriction to castle if the king crosses the beaten cell
@@ -26,5 +26,5 @@ description: >
   </p>
   <p>
   Unfortunately I can't share sources as the project was made on commercial
-  basis, but you're free to challenge AI :)
+  basis, but feel free to challenge AI :)
   </p>
