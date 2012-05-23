@@ -4,23 +4,29 @@
     There are lots of ways to contact me, but here I list only ones I feel
     convenient about. That means - feel free to choose any option among these,
     and I'll respond you as fast as I can
-  div#contacts
-    a#email
-      img(src="/images/email.png")#email
-    a(href="http://facebook.com/andrey.lushnikov")
-      img(src="/images/fb.png")#fb
-    a(href="http://www.couchsurfing.com/people/kotenok_gav")
-      img(src="/images/couch.png")#couch
-    a(href="http://vk.com/id8580")
-      img(src="/images/vk.png")#vk
-    a(href="http://twitter.com/#!/KoTeHoK_gav")
-      img(src="/images/twitter.png")#twitter
+  #contacts.smart-table
+    a#email.row
+      .name e-mail
+      .description generating email...
+    a(href="http://facebook.com/andrey.lushnikov")#fb.row
+      .name facebook
+      .description http://facebook.com/andrey.lushnikov
+    a(href="http://www.couchsurfing.com/people/kotenok_gav")#couch.row
+      .name CouchSurfing
+      .description http://www.couchsurfing.com/people/kotenok_gav
+    a(href="http://vk.com/id8580")#vk.row
+      .name VK
+      .description http://vk.com/id8580
+    a(href="http://twitter.com/#!/KoTeHoK_gav")#twitter.row
+      .name Twitter
+      .description @KoTeHoK_gav
 script
   $("title").html("Contact me");
   $("#contacts-section").ready(function(){
     var pp = 'liamg@vokinhsulsa';
     var mail = pp.split("").reverse().join("") + ".com";
     $("#contacts #email").attr("href", "mailto:" + mail);
+    $("#contacts #email .description").html(mail);
     $("#contacts a").attr("target", "_blank");
     $("#contacts a").click(function(e) {
       $.ga.trackOut(this.href);

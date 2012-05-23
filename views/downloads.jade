@@ -6,7 +6,7 @@
     welcome! But remember: things good for me might be nasty for you, so do it
     at your own risk
 
-  #table
+  #table.smart-table
     a(href="/files/vimrc").row
       .name .vimrc
       .description
@@ -47,11 +47,5 @@ script
     $(".row")
       .on('click', function() {
         $.ga.trackDownloads(this.href);
-      })
-      .on('mouseenter', function() {
-        $(this).addClass('selected');
-      })
-      .on('mouseleave', function() {
-        $(this).removeClass('selected');
       })
   });
