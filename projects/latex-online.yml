@@ -5,7 +5,10 @@ start: May 1, 2012
 finish: May 21, 2012
 tags:
   - Node.js
+  - JavaScript
   - TeX
+  - bash
+  - memcached
 screenshots:
   - /projects/latex-online/screenshot-1.png
 icon: /projects/latex-online/icon.png

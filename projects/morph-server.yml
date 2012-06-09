@@ -6,6 +6,7 @@ tags:
   - Ruby on Rails
   - WebGL
   - Three.js
+  - JavaScript
 screenshots:
   - /projects/morph-server/morph-screenshot.png
 icon: /projects/morph-server/proto.png
