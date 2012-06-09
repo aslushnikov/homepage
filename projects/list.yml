@@ -1,5 +1,6 @@
 # defines the order of projects
 projects:
+  - latex-online
   - homepage
   - chess
   - fb-android

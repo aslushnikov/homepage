@@ -1,0 +1,25 @@
+name: Latex Online
+link: latex.aslushnikov.com
+src: https://github.com/aslushnikov/latex-online
+start: May 1, 2012
+finish: May 21, 2012
+tags:
+  - Node.js
+  - TeX
+screenshots:
+  - /projects/latex-online/screenshot-1.png
+icon: /projects/latex-online/icon.png
+description: >
+  <p>
+  This is a small service developed to compile latex documents online.
+  The slogan is: <i>You give it a link, it gives you PDF</i>. The service
+  has a REST API, so if you have a TeX file publicly shared somewhere on the
+  web, then you can create a link using this service on the PDF of the file.
+  </p>
+  <p>
+  Service evolved and now has additional functionality.
+  It can build a TeX documents stored in git repositories, and additionally
+  it provides a tool for remote compilation from the command-line. The last
+  gives you an opportunity to avoid installing tex packages on your working machine.
+  </p>
+
