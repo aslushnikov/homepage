@@ -1,5 +1,6 @@
 # defines the order of projects
 projects:
+  - diploma
   - latex-online
   - homepage
   - chess

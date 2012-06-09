@@ -1,0 +1,46 @@
+# Template file for a project
+#
+# 1. If the file starts with underscore, then it won't be published
+# 2. Optional parameters:
+#   - shortname: a title under icon in a project view; will be set to
+#     name by default
+#
+name: Diploma
+link: http://web3d.aslushnikov.com
+start: Feb 20, 2012
+finish: Jun 9, 2012
+tags:
+  - WebGL
+  - Three.js
+  - Node.js
+  - Apache Thrift
+  - bash
+screenshots:
+  - /projects/diploma/screenshot-1.png
+icon: /projects/diploma/icon.png
+description: >
+  <p>This is my diploma project. This is a web-based 3D-model viewer/editor
+  with the following options:</p>
+  <ul>
+    <li>Load model stored in a OBJ file</li>
+    <li>Rotate, scale model</li>
+    <li>Edit model geometry with a deformation tool</li>
+    <li>Execute a server-side filter on the geometry</li>
+  </ul>
+  <p>
+  The last option is my favourite one. It is a powerful tool and you can make
+  use of it in a many ways. Here are some application:
+  </p>
+  <ul>
+    <li>Embed legacy code from old projects</li>
+    <li>Implement filters with hidden proprietary code in whatever language you
+    like (almost 20 potentionally supported)</li>
+    <li>Move some heavy deformation algorithms to server-side to speed up the
+    process</li>
+  </ul>
+  <p>The server computations are blazingly fast and work fine even over 3G
+  connection.</p>
+  <p>The diploma got an excellent mark. You can check out the text and
+  presentation of diploma <a href="https://github.com/aslushnikov/diplom-latex">here</a>
+  Unfortunately, the sources are not available.
+  </p>
